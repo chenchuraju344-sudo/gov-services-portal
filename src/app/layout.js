@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col justify-between">
+      <body className="min-h-screen flex flex-col justify-between bg-slate-50 text-slate-900">
         {/* Header */}
         <header className="bg-blue-700 text-white shadow-md">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        {/* Main Body */}
+        {/* Main Content Body */}
         <main className="flex-grow max-w-6xl w-full mx-auto p-4 sm:p-6">
           {children}
         </main>
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
             <p className="max-w-3xl mx-auto leading-relaxed">
               <strong>Disclaimer:</strong> This website is an independent informational portal and is 
               <strong> NOT affiliated with, authorized, or endorsed by any Government entity</strong> or official authority. 
-              We retrieve public data directly from official government endpoints (such as PFMS, PM-Kisan, UIDAI) to assist users in checking status easily.
+              We retrieve public data directly from official government endpoints to assist users in checking status easily.
             </p>
             <p className="text-xs text-slate-500">
               © {new Date().getFullYear()} Gov Direct Tracker. All Rights Reserved.
@@ -42,4 +42,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-          }
+}
